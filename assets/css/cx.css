@@ -762,6 +762,7 @@ h3 {
   }
   .logos-grid img:nth-child(4) {
     grid-column: span 2;
+    margin-left: 0.8em;
   }
   .logos-grid img:nth-child(5) {
     grid-column: span 2;
@@ -773,6 +774,7 @@ h3 {
   }
   .logos-grid img:nth-child(7) {
     grid-column: span 2;
+    margin-left: 0.5em;
   }
   .logos-grid img:nth-child(8) {
     grid-column: span 2;
