@@ -1,0 +1,882 @@
+/* ─── Base ─── */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #484848;
+}
+
+/* cx 콘텐츠 영역에만 Noto Sans KR 적용 (헤더/푸터 제외) */
+#cx-hero,
+#cx-mobile-hero,
+#cx-video,
+#cx-products,
+#cx-features,
+#cx-clients,
+#cx-testimonials,
+#cx-partner,
+#cx-cta {
+  font-family: 'Noto Sans KR', 'Raleway', Arial, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* ─── Section label ─── */
+.section-label {
+  color: #583fbc;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.6em;
+  display: block;
+}
+
+/* ─── Inner container ─── */
+.cx-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.5em;
+}
+
+.products-grid > *,
+.features-grid > *,
+.logos-grid > *,
+.testimonials-grid > *,
+.partner-inner > * {
+  min-width: 0;
+}
+
+/* ─── Font size─── */
+.hero-text h1 {
+  font-size: 2.7em;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: none;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.section-subtitle {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.card-text {
+  font-size: 0.9em;
+  line-height: 1.7;
+  margin: 0;
+  word-break: break-all;
+}
+
+/* mobile에서만 적용 */
+.mobile-br,
+.mobile-hero-text,
+.btn-outline.btn-mobile {
+  display: none;
+}
+
+/* ─── Purple button ─── */
+.btn-purple {
+  display: inline-flex;
+  justify-content: center;
+  padding: 3px;
+
+  width: 138px;
+  height: 38px;
+
+  background: #583fbc;
+  color: #fff !important;
+  border-radius: 4px;
+
+  font-size: 0.85em;
+  text-decoration: none;
+}
+.btn-purple:hover {
+  background: #4a43a8;
+  text-decoration: none;
+}
+
+/* ─── Outline button ─── */
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: #4db8e8 !important;
+  padding: 0.3em 1.5em;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1.5px solid #4db8e8;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.btn-outline:hover {
+  background: #4db8e8;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.card-header .btn-outline {
+  padding: 0.4em 2em;
+  font-size: 0.72em;
+  border-radius: 3px;
+  line-height: 1.4;
+}
+
+/* ═══════════════════════════════════
+         1. HERO
+      ═══════════════════════════════════ */
+#cx-hero {
+  padding-top: 7.25em;
+  background: #f2f2f2;
+  overflow: hidden;
+  position: relative;
+  min-height: 620px;
+}
+
+.hero-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8em 0 0;
+  margin-top: 80px;
+}
+
+.hero-text {
+  width: 100%;
+}
+
+.hero-text h1 {
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0 0 0.2em;
+}
+
+.hero-text p {
+  line-height: 1.8;
+  margin: 0 0 2.5em;
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5em;
+}
+
+.hero-image > img {
+  width: 300px;
+  display: block;
+}
+
+.hero-brand {
+  position: absolute;
+  bottom: 0;
+  right: 3em;
+  z-index: 1;
+}
+
+.hero-brand img {
+  height: 50px;
+}
+
+/* ═══════════════════════════════════
+         2. VIDEO
+      ═══════════════════════════════════ */
+#cx-video {
+  background: #000;
+  line-height: 0;
+}
+
+#cx-video video {
+  width: 100%;
+  display: block;
+}
+
+/* ═══════════════════════════════════
+         3. PRODUCTS
+      ═══════════════════════════════════ */
+#cx-products {
+  background: #fff;
+  padding: 5.5em 0;
+}
+
+.products-header {
+  margin-bottom: 3em;
+}
+
+.products-header h2 {
+  margin: 0 0 0.5em;
+  line-height: 1.4;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.product-card {
+  padding: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+}
+
+.card-check {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.product-card h3 {
+  margin: 0;
+  flex: 1;
+}
+
+.product-card > p {
+  padding-left: calc(24px + 0.8em);
+  margin-right: 1em;
+  height: 67px;
+}
+
+.product-card img.card-img {
+  width: 60%;
+  object-fit: contain;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.product-card:first-of-type img.card-img {
+  width: 55%;
+}
+
+/* ═══════════════════════════════════
+         4. FEATURES
+      ═══════════════════════════════════ */
+#cx-features {
+  background: #fff;
+  padding: 5.5em 0;
+}
+
+.features-header {
+  margin-bottom: 3em;
+}
+
+.features-header h2 {
+  margin: 0 0 0.4em;
+  line-height: 1.3;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em 4em;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+}
+
+.feature-icon img {
+  width: 72px;
+  height: 72px;
+}
+
+.feature-item h3 {
+  margin: 0 0 0.5em;
+}
+
+/* ═══════════════════════════════════
+         5. CLIENTS
+      ═══════════════════════════════════ */
+#cx-clients {
+  background: #fff;
+  padding: 5.5em 0;
+  text-align: center;
+}
+
+#cx-clients h2 {
+  margin: 0 0 0.5em;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  align-items: center;
+  justify-items: center;
+  margin: 5em 6em;
+}
+
+.logos-grid img {
+  max-height: 96px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ═══════════════════════════════════
+         6. TESTIMONIALS
+      ═══════════════════════════════════ */
+#cx-testimonials {
+  background: #fff;
+  padding: 5.5em 0 7em;
+  text-align: center;
+}
+
+#cx-testimonials h2 {
+  margin: 0 0 1.5em;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  text-align: center;
+  margin: 0 5em;
+}
+
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 2.5em 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card img.brand-logo {
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 1.5em;
+}
+
+.testimonial-card .stats {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 1em;
+  line-height: 1.3em;
+}
+
+.testimonial-card blockquote {
+  font-size: 0.9em;
+  line-height: 1.5;
+  border: none;
+  padding: 0;
+  margin: 0 0 2em;
+  font-style: normal;
+  flex: 1;
+}
+
+/* ═══════════════════════════════════
+         7. PARTNER BANNER
+      ═══════════════════════════════════ */
+#cx-partner {
+  position: relative;
+  background-image: url('/assets/img/cx/공식파트너사배너.svg');
+  background-size: cover;
+  background-position: center;
+  padding: 3.5em 0;
+}
+
+#cx-partner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.partner-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partner-inner h2 {
+  margin: 0 0 0.2em 0;
+  line-height: 1.4;
+  font-size: 1.8em;
+}
+
+.partner-inner img.partner-logo {
+  height: 60px;
+  padding-top: 10px;
+  display: block;
+}
+
+/* ═══════════════════════════════════
+         8. CTA
+      ═══════════════════════════════════ */
+#cx-cta {
+  background: #fff;
+  padding: 5em 0;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.cta-text p {
+  color: #000000;
+  font-size: 1.5em;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ─── 반응형 ─── */
+/* Tablet */
+@media screen and (max-width: 980px) {
+  .cx-inner {
+    padding: 0 3em;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 1.1em;
+  }
+
+  .hero-brand {
+    bottom: -0.5em;
+    right: 2em;
+  }
+
+  .hero-brand img {
+    height: 40px;
+  }
+
+  /* 그리드 → 2컬럼으로 변경 */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 2em;
+  }
+
+  .products-grid .product-card:last-child {
+    grid-column: 1 / 3;
+    justify-self: center; /* 가운데 정렬 */
+    max-width: calc((100% - 20px) / 2); /* 위 칸과 동일 너비 */
+  }
+
+  .card-header .btn-outline {
+    padding: 0.3em 1em;
+    font-size: 0.6em;
+    border-radius: 3px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* logo grid */
+  .logos-grid {
+    gap: 1em 2em;
+    margin: 3em 0;
+  }
+
+  .logos-grid img:nth-child(1) {
+    width: 80%;
+  }
+  .logos-grid img:nth-child(2) {
+    width: 110%;
+  }
+
+  .logos-grid img:nth-child(8) {
+    width: 75%;
+  }
+
+  .logos-grid img {
+    width: 90%;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: 1 / 3;
+    justify-self: center; /* 가운데 정렬 */
+    max-width: calc((100% - 20px) / 2); /* 위 칸과 동일 너비 */
+  }
+
+  .partner-inner {
+    display: block;
+    text-align: center;
+  }
+  .partner-inner h2 {
+    font-size: 1.5em;
+  }
+
+  .partner-inner img.partner-logo {
+    height: 50px;
+    margin: 15px auto auto;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .section-subtitle {
+    font-size: 1em;
+  }
+
+  .card-text {
+    font-size: 0.8em;
+  }
+
+  .cta-text p {
+    font-size: 1.1em;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 736px) {
+  #cx-hero {
+    padding-top: 0;
+  }
+
+  .cx-inner {
+    padding: 0 1.8em;
+  }
+
+  .hero-wrap {
+    padding-top: 6em;
+    margin-top: 0;
+  }
+
+  .hero-image {
+    margin: 2.7em 0 0 7em;
+  }
+
+  .hero-brand {
+    bottom: 0;
+    left: 2em;
+  }
+
+  .hero-brand img {
+    height: 35px;
+  }
+
+  .mobile-hero-text {
+    margin: 6em 0;
+  }
+
+  .section-label {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  /* 기존 요소 숨기기 */
+  .card-header .btn-outline,
+  .hero-text > p {
+    display: none;
+  }
+
+  .mobile-br,
+  .mobile-hero-text,
+  .btn-outline.btn-mobile {
+    display: block;
+  }
+
+  .card-header {
+    grid-area: header;
+    gap: 0.4em;
+    margin: 0 0 0.4em 0;
+  }
+
+  /* 그리드 → 1컬럼으로 변경 */
+  .products-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .products-grid .product-card:last-child {
+    grid-column: auto;
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .product-card {
+    display: grid;
+    grid-template-areas:
+      'header img'
+      'text   img'
+      'btn    img';
+  }
+
+  .product-card:nth-child(odd) {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .product-card:nth-child(even) {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .product-card > p {
+    grid-area: text;
+    padding-left: 0;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .product-card img.card-img {
+    grid-area: img;
+    width: 85%;
+    margin-top: 10px;
+  }
+
+  .product-card:nth-child(1) img.card-img {
+    width: 78%;
+  }
+
+  .product-card:nth-child(2) img.card-img {
+    margin-right: auto;
+    margin-left: 5px;
+  }
+
+  .product-card:nth-child(odd) img.card-img {
+    margin-right: 5px;
+    margin-left: auto;
+  }
+
+  .card-check {
+    width: 18px;
+  }
+
+  .product-card:nth-child(2) {
+    grid-template-areas:
+      'img header'
+      'img text'
+      'img btn';
+    text-align: right;
+  }
+
+  .product-card:nth-child(2) .card-header {
+    justify-content: flex-end;
+  }
+
+  .product-card:nth-child(2) .btn-mobile {
+    margin-left: auto;
+  }
+
+  .product-card:nth-child(2) h3 {
+    flex: none;
+  }
+
+  .btn-mobile {
+    grid-area: btn;
+    width: 120px;
+    height: 40px;
+    font-size: 0.65em;
+    text-align: center;
+    padding: 0.2em 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.2em;
+  }
+
+  .feature-item h3 {
+    margin: 0.5em 0 1em;
+  }
+
+  .feature-icon img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* logo grid */
+  .logos-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.8em 1em;
+    margin: 3em 1em;
+  }
+
+  /* 첫 번째 줄 - 2개 (각각 3칸씩) */
+  .logos-grid img:nth-child(1) {
+    grid-column: span 3;
+    width: 85%;
+  }
+  .logos-grid img:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  /* 두 번째 줄 - 3개 (각각 2칸씩) */
+  .logos-grid img:nth-child(3) {
+    grid-column: span 2;
+  }
+  .logos-grid img:nth-child(4) {
+    grid-column: span 2;
+  }
+  .logos-grid img:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  /* 세 번째 줄 - 3개 (각각 2칸씩) */
+  .logos-grid img:nth-child(6) {
+    grid-column: span 2;
+  }
+  .logos-grid img:nth-child(7) {
+    grid-column: span 2;
+  }
+  .logos-grid img:nth-child(8) {
+    grid-column: span 2;
+    width: 90%;
+  }
+
+  .logos-grid img {
+    width: 100%;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 0;
+  }
+
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: auto;
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .testimonial-card {
+    border: none;
+  }
+
+  /* CTA 세로 정렬 */
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* 파트너 배너 세로 정렬 */
+  .partner-inner {
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: center;
+  }
+
+  #cx-partner img.partner-logo {
+    height: 30px;
+    padding-top: 0;
+  }
+
+  /* text 관련 */
+  .hero-text h1 {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .mobile-hero-text > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .section-subtitle {
+    font-size: 0.7em;
+    line-height: 1.7;
+  }
+
+  .card-text {
+    font-size: 0.8em;
+  }
+
+  .feature-item .card-text {
+    text-align: left;
+    margin: 0 0.5em;
+  }
+
+  #cx-clients .section-subtitle {
+    font-size: 0.8em;
+    margin-top: 3em;
+  }
+
+  #cx-testimonials h2 {
+    margin: 0 0 0.8em;
+  }
+
+  .testimonial-card blockquote {
+    font-size: 0.85em;
+    margin-bottom: 3em;
+  }
+
+  .partner-inner h2 {
+    font-size: 1.3em;
+  }
+
+  #cx-cta {
+    padding: 3em 0;
+  }
+
+  .cta-text > p {
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 1.5em;
+  }
+}
